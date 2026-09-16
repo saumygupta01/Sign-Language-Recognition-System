@@ -966,8 +966,6 @@ def run_app():
     sys.exit(app.exec_())
 
 
-if __name__ == "__main__":
-    run_app()
 # ════════════════════════════════════════════════════════════════════
 
 class DataCollectionTab(QWidget):
@@ -1163,3 +1161,7 @@ class DataCollectionTab(QWidget):
                 self.worker.save_to_csv()
             self.worker.stop()
             self.worker = None
+
+
+if __name__ == "__main__":
+    run_app()
